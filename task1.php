@@ -73,21 +73,23 @@ True
 Notes:
 None */
 
-fscanf (STDIN,"%s %s", $str1, $str2);
-    $answer = isRotation ($str1, $str2);
-    if ($answer){
-        print "True";
-    }else{
-        print "False";
-    }
-function isRotation($str1, $str2){
-        if (strlen($str1) != strlen($str2)) return false;
-        for($i=0; $i<strlen($str1); $i++){
-            print $str1 . "\n";
-            if (strpos($str1, $str2) !== false){
-                return true;
-            }
-            $str1 = substr ($str1, 1). substr($str1, 0,1);
-        }
-        return false;
-    }
+// fscanf (STDIN,"%s %s", $str1, $str2);
+//     $answer = isRotation ($str1, $str2);
+//     if ($answer){
+//         print "True";
+//     }else{
+//         print "False";
+//     }
+// function isRotation($str1, $str2){
+//         if (strlen($str1) != strlen($str2)) return false;
+//         for($i=0; $i<strlen($str1); $i++){
+//             print $str1 . "\n";
+//             if (strpos($str1, $str2) !== false){
+//                 return true;
+//             }
+//             $str1 = substr ($str1, 1). substr($str1, 0,1);
+//         }
+//         return false;
+//     }
+
+
